@@ -9,6 +9,10 @@
     <script src="js/main.js"></script>
   </head>
   <body>
+    <header>
+    <img src="../image/logo.png" alt="Logo" class="logo">
+    </header>
+
     <main class="main">
       <div class="chat-system">
         <div class="chat-box">
@@ -36,6 +40,7 @@ if(isset($_POST['submit']) && $_POST['submit'] === "送信"){ //コメント入�
   $chat["imgPath"] = "image/nimoicon.png"; //画像ファイル名は任意
   $chat["time"] = date("H:i");
   $chat["text"] = htmlspecialchars($_POST['text'],ENT_QUOTES); /*時間の取得*/
+  $chat["text"] = htmlspecialchars($_POST['text'],ENT_QUOTES); /*分数の取得*/
 
   // 入力値格納処理
   if($file = file_get_contents($J_file)){ // ファイルがある場合 追記処理

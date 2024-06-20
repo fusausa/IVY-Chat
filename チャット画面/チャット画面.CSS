@@ -6,6 +6,15 @@ html {
 body {
     font-size: 1.7rem;
     margin: 0;
+    background-color: aqua;
+}
+header{
+    height: 70px;
+    text-align: center;
+    background-color: white;
+}
+.logo{
+    height: 70px;
 }
 
 .text-center {
@@ -43,11 +52,11 @@ body {
 }
 
 .chat-area::-webkit-scrollbar {
-    display: none;
+    display: none; /*input要素を見えないようにする*/
 }
 
 .chat-system input[type="submit"] {
-    display: none;
+    display: none; /*input要素を見えないようにする*/
 }
 
 .change-person {
