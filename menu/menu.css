@@ -11,3 +11,17 @@ header{
 body{
     background-color: aliceblue;
 }
+
+.Room{
+    text-align: center;
+}
+
+.Room1, .Room2, .Room3, .Room4 {
+    font-size: 18px;
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+    border: 1px;
+    background-color: rgb(248, 238, 153);
+    border-radius: 5px;
+}
