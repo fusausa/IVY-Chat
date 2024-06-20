@@ -14,16 +14,59 @@ body{
 
 .Room{
     padding-top: 80px;
-    width: 1000px;
+    margin: auto;
     text-align: center;
+    flex-wrap: wrap;
+}
+
+.Room1_2{
+    display:flex;
+}
+
+.Room3_4{
+    display:flex;
 }
 
 .Room1, .Room2, .Room3, .Room4 {
-    font-size: 18px;
-    width: 100px;
-    height: 40px;
-    margin: 5px;
-    border: 1px;
-    background-color: rgb(248, 238, 153);
-    border-radius: 5px;
+    font-size: 30px;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.Room1, .Room2, .Room3, .Room4:hover{
+    cursor: pointer;
+}
+
+.Room1{
+    background-color: rgb(212, 248, 212);
+}
+
+.Room1:hover{
+    background-color: rgb(172, 201, 172);
+}
+
+.Room2{
+    background-color: rgb(197, 247, 253);
+}
+
+.Room2:hover{
+    background-color: rgb(169, 210, 215);
+}
+
+.Room3{
+    background-color: rgb(255, 168, 255);
+}
+
+.Room3:hover{
+    background-color: rgb(217, 142, 217);
+}
+
+.Room4{
+    background-color: rgb(255, 222, 172);
+}
+
+.Room4:hover{
+    background-color: rgb(212, 184, 143);
 }

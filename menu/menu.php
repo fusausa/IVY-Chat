@@ -11,10 +11,14 @@
     </header>
 
     <div class="Room">
-        <div class="Room1">校内イベント<br>Room</div>
-        <div class="Room2">校外イベント<br>Room</div>
-        <div class="Room3">就活<br>Room</div>
-        <div class="Room4">みんなの<br>Room</div>
-    </div>
+        <div class="Room1_2">
+            <div class="Room1"><a href="../チャット画面/チャット画面.php">校内イベント<br>Room</a></div>
+            <div class="Room2"><a href="../チャット画面/チャット画面.php">校外イベント<br>Room</a></div>
+        </div>
+        <div class="Room3_4">
+            <div class="Room3"><a href="../チャット画面/チャット画面.php">就活<br>Room</a></div>
+            <div class="Room4"><a href="../チャット画面/チャット画面.php">みんなの<br>Room</a></div>
+        </div>
+        </div>
     </body>
 </html>
