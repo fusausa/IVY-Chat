@@ -11,10 +11,10 @@
     </header>
 
     <div class="Room">
-        <div class="Room1">Room1</div>
-        <div class="Room2">Room2</div>
-        <div class="Room3">Room3</div>
-        <div class="Room4">Room4</div>
+        <div class="Room1">校内イベント<br>Room</div>
+        <div class="Room2">校外イベント<br>Room</div>
+        <div class="Room3">就活<br>Room</div>
+        <div class="Room4">みんなの<br>Room</div>
     </div>
     </body>
 </html>

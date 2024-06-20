@@ -13,6 +13,8 @@ body{
 }
 
 .Room{
+    padding-top: 80px;
+    width: 1000px;
     text-align: center;
 }
 
