@@ -3,50 +3,47 @@ $J_file = "chatlog.json"; // ファイルパス格納
 date_default_timezone_set('Asia/Tokyo'); // タイムゾーンを日本にセット
 
 if(isset($_POST['submit']) && $_POST['submit'] === "送信"){ // #1
-    $chat = [];
-    $chat["person"] = "person1";
-    $chat["imgPath"] = "image/nimoicon.png"; //画像ファイル名は任意
-    $chat["time"] = date("H:i");
-    $chat["text"] = htmlspecialchars($_POST['text'],ENT_QUOTES);
+  $chat = [];
+  $chat["person"] = "person1";
+  $chat["imgPath"] = "../image/nimoicon.png"; //画像ファイル名は任意
+  $chat["time"] = date("H:i");
+  $chat["text"] = htmlspecialchars($_POST['text'],ENT_QUOTES);
 
-    $chat["text"] = htmlspecialchars($_POST['text'],ENT_QUOTES);
+  $chat["text"] = htmlspecialchars($_POST['text'],ENT_QUOTES);
 
-    // 入力値格納処理
-    if($file = file_get_contents($J_file)){ // #2
-      // ファイルがある場合 追記処理
-      $file = str_replace(array(" ","\n","\r"),"",$file);
-      $file = mb_substr($file,0,mb_strlen($file)-2);
-      $json = json_encode($chat);
-      $json = $file.','.$json.']}';
-      file_put_contents($J_file,$json,LOCK_EX);
-    }else{ // #2
-      // ファイルがない場合 新規作成処理
-      $json = json_encode($chat);
-      $json = '{"chatlog":['.$json.']}';
-      file_put_contents($J_file,$json,FILE_APPEND | LOCK_EX);
-    } // #2
+  // 入力値格納処理
+  if($file = file_get_contents($J_file)){ // #2
+    // ファイルがある場合 追記処理
+    $file = str_replace(array(" ","\n","\r"),"",$file);
+    $file = mb_substr($file,0,mb_strlen($file)-2);
+    $json = json_encode($chat);
+    $json = $file.','.$json.']}';
+    file_put_contents($J_file,$json,LOCK_EX);
+  }else{ // #2
+    // ファイルがない場合 新規作成処理
+    $json = json_encode($chat);
+    $json = '{"chatlog":['.$json.']}';
+    file_put_contents($J_file,$json,FILE_APPEND | LOCK_EX);
+  } // #2
 
-    // header('Location:https://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']).'/chat.php');
-    header('Location:./chat.php');
-    exit;  
-
+  // header('Location:https://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']).'/chat.php');
+  header('Location:./chat.php');
+  exit;  
 } // #1
 
 if($file = file_get_contents($J_file)){
-    $file = json_decode($file);
-    $array = $file->chatlog;
-    foreach($array as $object){
+  $file = json_decode($file);
+  $array = $file->chatlog;
+  foreach($array as $object){
 
-        if(isset($result)){
-            // 第二回目以降
-            $result =  $result.'<div class="'.$object->person.'"><p class="chat">'.str_replace("\r\n","<br>",$object->text).'<span class="chat-time">'.$object->time.'</span></p><img src="'.$object->imgPath.'"></div>';
-        }else{
-            // 第一回目
-            $result = '<div class="'.$object->person.'"><p class="chat">'.str_replace("\r\n","<br>",$object->text).'<span class="chat-time">'.$object->time.'</span></p><img src="'.$object->imgPath.'"></div>';
-        }
-
-
-    } 
+    if(isset($result)){
+      // 第二回目以降
+      $result =  $result.'<div class="'.$object->person.'"><p class="chat">'.str_replace("\r\n","<br>",$object->text).'<span class="chat-time">'.$object->time.'</span></p><img src="'.$object->imgPath.'"></div>';
+    }else{
+      // 第一回目
+      $result = '<div class="'.$object->person.'"><p class="chat">'.str_replace("\r\n","<br>",$object->text).'<span class="chat-time">'.$object->time.'</span></p><img src="'.$object->imgPath.'"></div>';
+    }
+  } 
 }
 
 ?>
@@ -62,16 +59,16 @@ if($file = file_get_contents($J_file)){
   <script src="js/main.js"></script>
 </head>
 <body>
-    <header>
-    <img src="../image/logo.png" alt="Logo" class="logo">
-    </header>
+  <header>
+  <img src="../image/logo.png" alt="Logo" class="logo">
+  </header>
 
   <main class="main">
     <div class="chat-system">
-        <div class="chat-box">
-            <div class="chat-area" id="chat-area">
-                <?php echo $result; ?>
-           </div>
+      <div class="chat-box">
+        <div class="chat-area" id="chat-area">
+          <?php echo $result; ?>
+        </div>
         <!-- 最初の入力フォーム -->
         <form class="send-box flex-box" action="chat.php#chat-area" method="post">
             <textarea id="textarea" type="text" name="text" rows="1" required placeholder="message.."></textarea>
@@ -79,7 +76,7 @@ if($file = file_get_contents($J_file)){
             <label for="search"><i class="far fa-paper-plane"></i></label>
         </form>
         <!-- 最初の入力フォーム -->
-        </div>
+      </div>
     </div>
   </main>
 </body>
