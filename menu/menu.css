@@ -1,26 +1,32 @@
 header{
-    height: 70px;
+    height: 100px;
     text-align: center;
-    background-color: white;
+    background-color: aliceblue;
 }
 
 .logo{
-    height: 70px;
+    height: 100px;
 }
 
 body{
     background-color: aliceblue;
+    font-family: "IBM Plex Sans JP", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+        
 }
 
 .Room{
-    padding-top: 80px;
-    margin: auto;
+    width: 900px;
+    padding-top: 20px;
     text-align: center;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .Room1_2{
     display:flex;
+    padding-bottom: 30px;
 }
 
 .Room3_4{
@@ -30,43 +36,38 @@ body{
 .Room1, .Room2, .Room3, .Room4 {
     font-size: 30px;
     width: 300px;
-    height: 200px;
-    margin: 20px;
+    height: 190px;
+    margin: 0 auto;
     border-radius: 10px;
-}
-
-.Room1, .Room2, .Room3, .Room4:hover{
-    cursor: pointer;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .Room1{
     background-color: rgb(212, 248, 212);
 }
 
-.Room1:hover{
-    background-color: rgb(172, 201, 172);
-}
-
 .Room2{
     background-color: rgb(197, 247, 253);
-}
-
-.Room2:hover{
-    background-color: rgb(169, 210, 215);
 }
 
 .Room3{
     background-color: rgb(255, 168, 255);
 }
 
-.Room3:hover{
-    background-color: rgb(217, 142, 217);
-}
-
 .Room4{
     background-color: rgb(255, 222, 172);
 }
 
-.Room4:hover{
-    background-color: rgb(212, 184, 143);
+.Room1:hover, .Room2:hover, .Room3:hover, .Room4:hover{
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
