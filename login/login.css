@@ -1,0 +1,73 @@
+header{
+    height: 100px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.logo{
+    height: 100px;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: "IBM Plex Sans JP", sans-serif;
+    font-weight: 300;
+}
+
+main {
+    font-size: 20px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* フォーム全体を中央揃え */
+}
+
+.form-group {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 20em;
+    height: 2em;
+    font-size: 20px;
+    background-color: rgb(212, 208, 208);
+    border-radius: 5px;
+}
+
+.gradient1{
+    font-family: "IBM Plex Sans JP", sans-serif;
+    text-align: center; /* テキストの配置 */
+    font-size: 15px; /* フォントサイズ */
+    background-color: white;
+    }
+
+/*hoverした際の、背景の場所とテキスト色の変更*/
+.gradient1:hover {
+    filter: brightness(90%);
+}
+
+input[type="submit"] {
+    padding: 5px 20px; /* パディング */
+    text-align: center; /* テキストの配置 */
+    text-decoration: none; /* テキスト装飾を消す */
+    font-size: 25px; /* フォントサイズ */
+    margin: auto; /* マージン */
+    margin-top: 30px;
+    cursor: pointer; /* カーソルをポインターにする */
+    border-radius: 10px; /* 角を丸くする */
+    align-self: center; /* ボタンを中央揃え */    
+}
