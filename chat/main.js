@@ -5,7 +5,6 @@ $(document).ready(function () {
         // フォームデータを取得
         var formData = {
             name: $('#name').val(),
-            email: $('#email').val(),
             message: $('#message').val()
         };
 
@@ -35,7 +34,6 @@ function fetchMessages() {
     // フォームデータを取得
     var formData = {
         name: $('#name').val(),
-        email: $('#email').val(),
         message: $('#message').val(),
     };
     $.ajax({
@@ -50,7 +48,7 @@ function fetchMessages() {
 
             messages.forEach(function (message) {
                 var messageItem = $('<li></li>').text(
-                    message.name + ' (' + message.email + '): ' + message.message + ' [' + message.created_at + ']'
+                    message.name + ' (' + message.message + '): ' + ' [' + message.created_at + ']'
                 );
                 messageList.append(messageItem);
             });

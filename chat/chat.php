@@ -36,7 +36,7 @@ if($file = file_get_contents($J_file)){
   $array = $file->chatlog;
   foreach($array as $object){
 
-    if(isset($result)){
+    if(isset($result)){ //ログをページ上に表示
       // 第二回目以降
       $result =  $result.'<div class="'.$object->person.'"><p class="chat">'.str_replace("\r\n","<br>",$object->text).'<span class="chat-time">'.$object->time.'</span></p><img src="'.$object->imgPath.'"></div>';
     }else{
