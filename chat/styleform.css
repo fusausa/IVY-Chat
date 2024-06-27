@@ -1,0 +1,73 @@
+header{
+    height: 100px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.logo{
+    height: 100px;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: "IBM Plex Sans JP", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+        
+}
+
+.Room{
+    width: 900px;
+    padding-top: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.Room1_2{
+    display:flex;
+    padding-bottom: 30px;
+}
+
+.Room3_4{
+    display:flex;
+}
+
+.Room1, .Room2, .Room3, .Room4 {
+    font-size: 30px;
+    width: 300px;
+    height: 190px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Room1{
+    background-color: rgb(212, 248, 212);
+}
+
+.Room2{
+    background-color: rgb(197, 247, 253);
+}
+
+.Room3{
+    background-color: rgb(255, 168, 255);
+}
+
+.Room4{
+    background-color: rgb(255, 222, 172);
+}
+
+.Room1:hover, .Room2:hover, .Room3:hover, .Room4:hover{
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

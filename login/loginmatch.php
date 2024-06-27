@@ -9,7 +9,7 @@ try{
 
     //$user_pass =md5($user_pass);暗号化するやつ
 
-    $dsn = 'mysql:dbname=testdb;host=localhost;charset=utf8';
+    $dsn = 'mysql:dbname=testdb;host=127.0.0.1;charset=utf8';
     $db_username = "root";
     $db_password = "";
 

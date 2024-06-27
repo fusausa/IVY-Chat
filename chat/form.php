@@ -3,13 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>フォーム送信</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.min.css">
+    <title>message</title>
+    <link rel="stylesheet" type="text/css" href="styleform.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <img src="../image/logo.png" alt="Logo" class="logo">
+    </header>
+
     <h2>Message</h2>
     <ul id="messageList"></ul>
 
