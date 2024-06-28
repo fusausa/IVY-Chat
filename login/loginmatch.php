@@ -9,8 +9,8 @@ try{
 
     //$user_pass =md5($user_pass);暗号化するやつ
 
-    $dsn = 'mysql:dbname=testdb;host=127.0.0.1;charset=utf8';
-    $db_username = "root";
+    $dsn = 'mysql:dbname=testdb;host=172.16.3.132;charset=utf8';
+    $db_username = "sample_user";
     $db_password = "";
 
     $dbh = new PDO($dsn, $db_username, $db_password);
