@@ -8,66 +8,43 @@ header{
     height: 100px;
 }
 
+
+
 body{
     background-color: aliceblue;
     font-family: "IBM Plex Sans JP", sans-serif;
     font-weight: 300;
-    font-style: normal;
-        
+    font-style: normal;        
 }
 
-.Room{
-    width: 900px;
-    padding-top: 20px;
-    text-align: center;
-    flex-wrap: wrap;
+#messageList{
+    
+    color:blueviolet;
+}
+h2{
+    width: 10em;
     margin: 0 auto;
-}
-
-.Room1_2{
-    display:flex;
-    padding-bottom: 30px;
-}
-
-.Room3_4{
-    display:flex;
-}
-
-.Room1, .Room2, .Room3, .Room4 {
-    font-size: 30px;
-    width: 300px;
-    height: 190px;
-    margin: 0 auto;
+    font-family: "IBM Plex Sans JP", sans-serif;
+    background-color:  rgb(212, 248, 212);
     border-radius: 10px;
-    border: solid 1px black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border: solid 1px #000;
 }
 
-.Room1{
+
+#myForm{
+    color: rgb(75, 127, 240);
+}
+
+#send{
+    font-family: "IBM Plex Sans JP", sans-serif;
     background-color: rgb(212, 248, 212);
-}
+    border-radius: 10px;
+    border: solid 2px #000;
 
-.Room2{
-    background-color: rgb(197, 247, 253);
 }
-
-.Room3{
-    background-color: rgb(255, 168, 255);
-}
-
-.Room4{
-    background-color: rgb(255, 222, 172);
-}
-
-.Room1:hover, .Room2:hover, .Room3:hover, .Room4:hover{
+#send:hover{
+    background-color: rgb(228, 255, 169);
     cursor: pointer;
-    filter: brightness(90%);
-}
-
-a{
-    text-decoration: none;
-    color: black;
 }

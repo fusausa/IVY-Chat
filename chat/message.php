@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS messages (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     message TEXT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIME DEFAULT CURRENT_TIME
 )";
 
 if ($conn->query($tableCreationQuery) === FALSE) {
