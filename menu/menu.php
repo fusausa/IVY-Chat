@@ -16,7 +16,7 @@
     <div class="Room">
         <div class="Room1_2">
             <div class="Room1"><a href="../chat/form.php">校内イベント<br>Room</a></div>
-            <div class="Room2"><a href="../chat/form.php">校外イベント<br>Room</a></div>
+            <div class="Room2"><a href="../chat/room2/form.php">校外イベント<br>Room</a></div>
         </div>
         <div class="Room3_4">
             <div class="Room3"><a href="../chat/form.php">就活<br>Room</a></div>
