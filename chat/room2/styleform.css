@@ -26,9 +26,19 @@ h2{
     background-color: rgb(197, 247, 253);
 }
 
+.messageList {
+    padding: 20px;              /* 余白指定 */
+}
+
 #messageList{
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 15px;
     text-align: center;
     color: palevioletred;
+    background-color: rgb(234, 234, 234);
 }
 
 a{
@@ -40,7 +50,16 @@ form {
     text-align: center;
 }
 
-button {
+#send {
+    width: 50px;
+    border: solid 1px;
+    border-radius: 5px;
+    background-color: rgb(197, 247, 253);
+    font-family: "IBM Plex Sans JP", sans-serif;
+    margin: 10px;
+}
+
+#BackButton {
     width: 50px;
     border: solid 1px;
     border-radius: 5px;
@@ -52,3 +71,11 @@ button:hover {
     filter: brightness(90%);
     cursor: pointer;
 }
+
+ul {
+    list-style: none;
+  }
+
+  label {
+    padding: 10px;
+  }
