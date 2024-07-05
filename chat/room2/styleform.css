@@ -27,7 +27,7 @@ h2{
 }
 
 .messageList {
-    padding: 20px;              /* 余白指定 */
+    padding: 20px;      /* 余白指定 */
 }
 
 #messageList{
@@ -76,6 +76,20 @@ ul {
     list-style: none;
   }
 
-  label {
+label {
     padding: 10px;
+}
+
+/* ラジオボタンの○を消す */
+input[type="radio"] {
+    display: none;
+}
+
+/* 未選択の場合、色を薄くする */
+input[type="radio"] + label img {
+    opacity:0.5;
   }
+/* 選択済みの場合、色を濃くする */
+input[type="radio"]:checked + label img {
+    opacity:1;
+}

@@ -27,6 +27,12 @@
     
     
     <form id="myForm">
+        <div class="icon">
+            <input id="icon1" type="radio" value="nimoicon" name="image">
+            <label for="icon1"><img src="../../image/nimoicon.png" with="40" height="40"></label>
+            <input id="icon2" type="radio" value="okojoicon" name="image">
+            <label for="icon2"><img src="../../image/okojoicon.png" with="40" height="40"></label>
+        </div>
         <label for="name">名前:</label>
         <input type="text" id="name" name="name" required>
         <label for="message">メッセージ:</label>
