@@ -8,8 +8,6 @@ header{
     height: 100px;
 }
 
-
-
 body{
     background-color: aliceblue;
     font-family: "IBM Plex Sans JP", sans-serif;
@@ -17,21 +15,25 @@ body{
     font-style: normal;        
 }
 
-#messageList{
-    
-    color:blueviolet;
-}
 h2{
+    font-size: 16px;
     width: 10em;
     margin: 0 auto;
-    font-family: "IBM Plex Sans JP", sans-serif;
-    background-color:  rgb(212, 248, 212);
-    border-radius: 10px;
-    text-align: center;
-    color: rgb(0, 0, 0);
+    padding: 5px;
     border: solid 1px #000;
+    text-align: center;
+    border-radius: 40px;
+    background-color:  rgb(212, 248, 212);
 }
 
+#messageList{  
+    color:blueviolet;
+}
+
+form{
+    padding: 10%;
+    text-align: center;
+}
 
 #myForm{
     color: rgb(75, 127, 240);
@@ -47,4 +49,8 @@ h2{
 #send:hover{
     background-color: rgb(228, 255, 169);
     cursor: pointer;
+}
+
+ul{
+    list-style: none;
 }

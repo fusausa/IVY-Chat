@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>message</title>
+    <title>校内イベント</title>
     <link rel="stylesheet" type="text/css" href="styleform.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
     <script src="main.js"></script>
     </ul>
     <form id="myForm">
-        <label for="name">名前:</label>
+        <label for="name">&emsp;&emsp;名&emsp;&nbsp;前&nbsp;&nbsp;:</label>
         <input type="text" id="name" name="name" required>
         <br>
         <label for="message">メッセージ:</label>
