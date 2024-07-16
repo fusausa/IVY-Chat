@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 
 // テーブルが存在しない場合は作成
 $tableCreationQuery = "
-CREATE TABLE IF NOT EXISTS messages2 (
+CREATE TABLE IF NOT EXISTS messages3 (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     message TEXT NOT NULL,
@@ -44,7 +44,7 @@ if ($method == 'POST') {
     }
 
     // SQL文を準備
-    $stmt = $conn->prepare("INSERT INTO messages2 (name, message) VALUES (?, ?)");
+    $stmt = $conn->prepare("INSERT INTO messages3 (name, message) VALUES (?, ?)");
     $stmt->bind_param("ss", $name, $message);
 
     // データを挿入
@@ -60,7 +60,7 @@ if ($method == 'POST') {
 
 } else if ($method == 'GET') {
     // データを取得して返す
-    $result = $conn->query("SELECT id, name, message, created_at FROM messages2 ORDER BY id ASC");
+    $result = $conn->query("SELECT id, name, message, created_at FROM messages3 ORDER BY id ASC");
     
     $messages = array();
     while ($row = $result->fetch_assoc()) {

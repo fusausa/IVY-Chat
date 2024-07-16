@@ -30,7 +30,7 @@ if ($conn->connect_error) {
 
 <head>
     <meta charset="UTF-8">
-    <title>校外イベントRoom</title>
+    <title>みんなのRoom</title>
     <link rel="stylesheet" type="text/css" href="../styleform.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +42,7 @@ if ($conn->connect_error) {
         <img src="../../image/logo.png" alt="Logo" class="logo">
     </header>
 
-    <h2 id="h2_2">校外イベントRoom</h2>
+    <h2 id="h2_4">みんなのRoom</h2>
     <div class = "messageList">
         <ul id="messageList">
             <!-- jQueryの読み込み -->
@@ -53,19 +53,11 @@ if ($conn->connect_error) {
     </div>
     
     <form id="myForm">
-        <!--
-        <div class="icon">
-            <input id="icon1" type="radio" value="../../image/nimoicon.png" name="image" checked>
-            <label for="icon1"><img src="../../image/nimoicon.png" with="40" height="40"></label>
-            <input id="icon2" type="radio" value="../../image/okojoicon.png" name="image">
-            <label for="icon2"><img src="../../image/okojoicon.png" with="40" height="40"></label>
-        </div>
-        -->
         <label for="name">名前:</label>
         <input type="text" id="name" name="name" required>
         <label for="message">メッセージ:</label>
         <textarea id="message" name="message" required></textarea>
-        <button id="send2" type="submit">送信</button>
+        <button id="send4" type="submit">送信</button>
     </form>
     <div class="BackButton">
         <a href="../../menu/menu.php">戻る</a>

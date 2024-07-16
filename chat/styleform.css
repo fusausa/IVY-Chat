@@ -12,45 +12,171 @@ body{
     background-color: aliceblue;
     font-family: "IBM Plex Sans JP", sans-serif;
     font-weight: 300;
-    font-style: normal;        
+    font-style: normal;
 }
 
-h2{
+h2{ 
     font-size: 16px;
     width: 10em;
     margin: 0 auto;
     padding: 5px;
-    border: solid 1px #000;
+    border: solid 1px;
     text-align: center;
     border-radius: 40px;
+    }
+
+#h2_1 {
+    background-color: rgb(212, 248, 212);
+}
+
+#h2_2 {
+    background-color: rgb(197, 247, 253);
+}
+
+#h2_3 {
+    background-color: rgb(255, 168, 255);
+}
+
+#h2_4 {
+    background-color: rgb(255, 222, 172);
+}
+
+.messageList {
+    padding: 20px;      /* 余白指定 */
+}
+
+#messageList{
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    color: black;
+    background-color: rgb(234, 234, 234);
+    overflow-y: scroll;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#send1, #send2, #send3, #send4 {
+    display: inline-block;
+    width: 50px;
+    height: 2em;
+    border: solid 1px;
+    border-radius: 5px;
+    font-family: "IBM Plex Sans JP", sans-serif;
+    margin-left: 20px;
+}
+
+#send1 {
     background-color:  rgb(212, 248, 212);
 }
 
-#messageList{  
-    color:blueviolet;
+#send2 {
+    background-color: rgb(197, 247, 253);
 }
 
-form{
-    padding: 10%;
-    text-align: center;
+#send3 {
+    background-color: rgb(255, 168, 255);
 }
 
-#myForm{
-    color: rgb(75, 127, 240);
+#send4 {
+    background-color: rgb(255, 222, 172);
 }
-
-#send{
+/*
+.BackButton {
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    width: 5em;
+    height: 2em;
+    border: solid 1px;
+    border-radius: 5px;
+    background-color: pink;
     font-family: "IBM Plex Sans JP", sans-serif;
-    background-color: rgb(212, 248, 212);
-    border-radius: 10px;
-    border: solid 2px #000;
-
 }
-#send:hover{
-    background-color: rgb(228, 255, 169);
+*/
+
+.BackButton a {
+    position: relative;
+    justify-content: space-around;
+    align-items: left;
+    margin: 0 auto;
+    max-width: 200px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+.BackButton a:before {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: rgba(0,0,0,.1);
+    transform: translateX(-50%);
+}
+
+.BackButton a:after {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+
+.BackButton a:hover {
+    opacity: 0.7;
+}
+
+.BackButton a:hover:after {
+    transform: scale(1, 1);
+}
+
+ul {
+    list-style: none;
+  }
+
+label {
+    padding: 10px;
+}
+
+label:hover {
     cursor: pointer;
 }
 
-ul{
-    list-style: none;
+input[type="text"]{
+    width: 10em;
+    display: inline-block;
+    font-family: "IBM Plex Sans JP", sans-serif;
+}
+
+textarea {
+    width: 15em;
+    display: inline-block;
+    font-family: "IBM Plex Sans JP", sans-serif;
+}
+
+#message, #name {
+    display: inline-block;
+    height: 1.5em;
 }

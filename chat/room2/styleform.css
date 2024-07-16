@@ -37,8 +37,9 @@ h2{
     border: 1px solid black;
     border-radius: 15px;
     text-align: center;
-    color: palevioletred;
-    background-color: rgb(234, 234, 234);
+    color: rgb(19, 17, 18);
+    background-color: gainsboro;
+    overflow-y: scroll;
 }
 
 a{
@@ -47,23 +48,32 @@ a{
 }
 
 form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 #send {
+    display: inline-block;
     width: 50px;
+    height: 2em;
     border: solid 1px;
     border-radius: 5px;
     background-color: rgb(197, 247, 253);
     font-family: "IBM Plex Sans JP", sans-serif;
-    margin: 10px;
+    margin-left: 20px;
 }
 
 #BackButton {
-    width: 50px;
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    width: 5em;
+    height: 2em;
     border: solid 1px;
     border-radius: 5px;
-    background-color: white;
+    background-color: pink;
     font-family: "IBM Plex Sans JP", sans-serif;
 }
 
@@ -88,8 +98,31 @@ input[type="radio"] {
 /* 未選択の場合、色を薄くする */
 input[type="radio"] + label img {
     opacity:0.5;
-  }
+}
+
 /* 選択済みの場合、色を濃くする */
 input[type="radio"]:checked + label img {
     opacity:1;
+}
+
+/* ラジオボタンホバー時マウスをポインターにする */
+label:hover {
+    cursor: pointer;
+}
+
+input[type="text"]{
+    width: 10em;
+    display: inline-block;
+    font-family: "IBM Plex Sans JP", sans-serif;
+}
+
+textarea {
+    width: 15em;
+    display: inline-block;
+    font-family: "IBM Plex Sans JP", sans-serif;
+}
+
+#message, #name {
+    display: inline-block;
+    height: 1.5em;
 }
