@@ -1,11 +1,30 @@
 header{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
     height: 100px;
-    text-align: center;
     background-color: aliceblue;
 }
 
 .logo{
     height: 100px;
+    margin: 0 auto;
+}
+
+.logout{
+    font-family: "IBM Plex Sans JP", sans-serif;
+    background-color: rgb(142, 172, 248);
+    color: rgb(0, 0, 0); /* テキストの色 */
+    padding: 10px 20px; /* パディング */
+    position: absolute;
+    right: 3em;
+    font-size: 15px; /* フォントサイズ */
+    cursor: pointer; /* カーソルをポインターにする */
+    border-radius: 30px; /* 角を丸くする */
+}
+
+.logout:hover{
+    filter: brightness(95%);
 }
 
 body{

@@ -11,6 +11,7 @@
 <body>
     <header>
     <img src="../image/logo.png" alt="Logo" class="logo">
+    <button class="logout" onclick="logout()">ログアウト</button>
     </header>
 
     <div class="Room">
@@ -24,4 +25,11 @@
         </div>
         </div>
     </body>
+    <footer>
+    <script>
+        function logout() {
+            window.location.href = 'logout_message.php';
+        }
+    </script>
+    </footer>
 </html>
