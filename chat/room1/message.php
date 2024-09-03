@@ -61,7 +61,7 @@ if ($method == 'POST') {
 
 } else if ($method == 'GET') {
     // データを取得して返す
-    $result = $conn->query("SELECT id, name, message, created_at FROM messages ORDER BY created_at ASC");
+    $result = $conn->query("SELECT id, name, message, created_at FROM messages ORDER BY id ASC");
     
     $messages = array();
     while ($row = $result->fetch_assoc()) {
