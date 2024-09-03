@@ -13,6 +13,7 @@ if ($conn->connect_error) {
     die("接続に失敗しました: " . $conn->connect_error);
 }
 
+
 // テーブルが存在しない場合は作成
 $tableCreationQuery = "
 CREATE TABLE IF NOT EXISTS messages (
