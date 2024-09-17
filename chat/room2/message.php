@@ -1,7 +1,7 @@
 <?php
 // データベース接続情報
-$servername = "localhost";
-$username = "root";
+$servername = "172.16.3.132";
+$username = "sample_user";
 $password = "";
 $dbname = "testdb";
 
